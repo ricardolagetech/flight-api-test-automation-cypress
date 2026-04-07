@@ -17,11 +17,17 @@ The suite validates flight creation behavior under different conditions, includi
 - format validations
 - business rule validations
 
-## Target API
+## Setup
 
-This automation project was built against the API repository above.
+This automation project was built against the API repository linked above.
 
-To run this suite locally, the target API must be running before the tests start.
+To run the suite locally:
+
+1. Clone the target API repository.
+2. Install the API dependencies.
+3. Start the API locally.
+4. Configure the environment variables for this test project if needed.
+5. Run this Cypress suite.
 
 ## Tech Stack
 
@@ -35,13 +41,13 @@ Note: the test runner structure and assertions used in this project are provided
 
 ```text
 test/
-	fixtures/
-		voos/
-	support/
-		commands.js
-		e2e.js
-	voos/
-		post-voos.cy.js
+  fixtures/
+    voos/
+  support/
+    commands.js
+    e2e.js
+  voos/
+    post-voos.cy.js
 cypress.config.js
 package.json
 README.md
@@ -179,9 +185,9 @@ The automated test was intentionally kept aligned with the expected requirement 
 
 ## Visual Evidence
 
-The screenshot below shows the failing validation scenario for `milhas`, making the API defect visible during test execution.
+The image below shows a real terminal execution of the suite, including the overall result and the known validation mismatch for `milhas`.
 
-![Known defect evidence: milhas validation mismatch](docs/images/known-defect-milhas-validation.png)
+![Real test run overview](docs/images/test-run-overview.png)
 
 ## What This Project Demonstrates
 
