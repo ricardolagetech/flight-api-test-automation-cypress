@@ -169,25 +169,11 @@ Including validation of:
 - invalid formats
 - numeric business rule violations
 
-## Known API Defect
-
-When running the suite against the local API, there is a known mismatch in the validation message for the `milhas` field.
-
-### Expected requirement message
-
-`Milhas deve ser um número maior que zero.`
-
-### Actual API response
-
-`Milhas deve ser um numero maior que zero.`
-
-The automated test was intentionally kept aligned with the expected requirement in order to expose the defect.
-
 ## Visual Evidence
 
-The image below shows a real terminal execution of the suite, including the overall result and the known validation mismatch for `milhas`.
+The image below shows a real terminal execution of the suite with all scenarios passing.
 
-![Real test run overview](docs/images/test-run-overview.png)
+![Real test run overview](docs/images/test-run-overview_passing.PNG)
 
 ## What This Project Demonstrates
 
@@ -198,7 +184,7 @@ This project was built to demonstrate:
 - reusable custom commands
 - positive and negative scenario coverage
 - maintainable test design
-- defect identification and documentation
+- clear validation of API behavior against expected rules
 
 ## Possible Next Steps
 
