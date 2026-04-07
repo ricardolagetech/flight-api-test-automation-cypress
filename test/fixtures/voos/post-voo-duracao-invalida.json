@@ -1,0 +1,11 @@
+{
+  "companhia": "LATAM",
+  "origem": "GRU",
+  "destino": "REC",
+  "data": "2026-04-10",
+  "horario": "09:45",
+  "escalas": false,
+  "duracao": "3h15",
+  "preco": 899.9,
+  "milhas": 12500
+}

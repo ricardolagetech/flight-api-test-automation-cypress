@@ -1,0 +1,10 @@
+{
+  "companhia": "GOL",
+  "origem": "CGH",
+  "destino": "SSA",
+  "data": "2026-05-01",
+  "escalas": true,
+  "duracao": "02:20",
+  "preco": 450.5,
+  "milhas": 6700
+}

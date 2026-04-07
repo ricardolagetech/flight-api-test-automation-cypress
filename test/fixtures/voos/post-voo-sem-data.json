@@ -1,0 +1,10 @@
+{
+  "companhia": "LATAM",
+  "origem": "GRU",
+  "destino": "REC",
+  "horario": "09:45",
+  "escalas": false,
+  "duracao": "03:15",
+  "preco": 899.9,
+  "milhas": 12500
+}
