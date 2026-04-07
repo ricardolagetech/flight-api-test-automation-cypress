@@ -21,13 +21,45 @@ The suite validates flight creation behavior under different conditions, includi
 
 This automation project was built against the API repository linked above.
 
-To run the suite locally:
+### 1. Clone and start the target API
 
-1. Clone the target API repository.
-2. Install the API dependencies.
-3. Start the API locally.
-4. Configure the environment variables for this test project if needed.
-5. Run this Cypress suite.
+```bash
+git clone https://github.com/ricardolagetech/flight-api-tests.git
+cd flight-api-tests
+npm install
+npm start
+```
+
+The API expects Basic Auth credentials. For local execution, create a `.env` file in the API project based on `.env.example` or set the variables before starting the server.
+
+Example for PowerShell:
+
+```powershell
+$env:API_BASIC_USER="interno"
+$env:API_BASIC_PASS="senha-forte-local"
+npm start
+```
+
+After the API starts, it should be available at `http://localhost:3000`.
+
+### 2. Configure this Cypress project
+
+This project already includes a sample environment file in `.env.example`:
+
+```env
+API_BASE_URL=http://localhost:3000
+API_BASIC_USER=interno
+API_BASIC_PASS=senha-forte-local
+```
+
+If needed, create a local `.env` file in this project with the same values or adjust them to match your API configuration.
+
+### 3. Install dependencies and run the suite
+
+```bash
+npm install
+npm test
+```
 
 ## Tech Stack
 
